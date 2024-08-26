@@ -24,14 +24,14 @@ const PageTwo = () => {
 
 
       <div
-        hx-get={`http://localhost:8080/progress/${id}`}
+        hx-get={`https://test-back-220v.onrender.com/progress/${id}`}
         hx-trigger="load"
         hx-target="#progress"
       />
 
 
       <button
-        hx-post={`http://localhost:8080/start/${id}`}
+        hx-post={`https://test-back-220v.onrender.com/start/${id}`}
         hx-trigger="click"
         hx-target="#progress"
       >
